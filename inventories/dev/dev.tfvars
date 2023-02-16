@@ -1,0 +1,16 @@
+project_id                  = ""
+env_name                    = "dev"
+topic                       = ""
+subscription_name           = ""
+role                        = "roles/pubsub.publisher"
+ack_deadline_seconds        = 20
+sa_email                    = "service-481355040571@gs-project-accounts.iam.gserviceaccount.com"
+payload_format              = "JSON_API_V1"
+event_types                 = ["OBJECT_FINALIZE"]
+uniform_bucket_level_access = true
+location                    = "EU"
+sbucket                     = ""
+sproject                    = ""
+account_id                  = ""
+display_name                = "sa for the pod"
+ksa_name = ""

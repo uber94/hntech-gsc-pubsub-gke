@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pubsub-app
+  labels:
+    app: pubsub-app
+spec:
+  selector:
+    matchLabels:
+      app: pubsub-app
+  template:
+    metadata:
+      labels:
+        app: pubsub-app
+      namespace: default
+    spec:
+      serviceAccountName: # Votre SA
+      containers:
+      - name: pubsub-app
+        image: # Votre repo
